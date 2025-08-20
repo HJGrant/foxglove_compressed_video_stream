@@ -13,6 +13,8 @@ find_package(vision_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(foxglove_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(depthai_ros_driver REQUIRED)
+find_package(foxglove_bridge REQUIRED)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GST REQUIRED gstreamer-1.0)
@@ -32,6 +34,8 @@ ament_target_dependencies(foxglove_compressed_video_stream
   OpenCV
   cv_bridge
   foxglove_msgs
+  depthai_ros_driver
+  foxglove_bridge
 )
 
 target_include_directories(foxglove_compressed_video_stream PRIVATE

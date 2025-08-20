@@ -20,6 +20,8 @@
   <depend>gstreamer1.0</depend>
   <depend>gstreamer-app-1.0</depend>
   <depend>gstreamer-rtsp-server-1.0</depend>
+  <exec_depend>depthai_ros_driver</exec_depend>
+  <exec_depend>foxglove_bridge</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
